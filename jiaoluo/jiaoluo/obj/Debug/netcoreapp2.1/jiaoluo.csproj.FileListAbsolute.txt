@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\jiaoluo.deps.json
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\jiaoluo.runtimeconfig.json
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\jiaoluo.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\jiaoluo.dll
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\jiaoluo.pdb
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.RazorAssemblyInfo.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.RazorAssemblyInfo.cs
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.dll
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.pdb
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\appsettings.json
