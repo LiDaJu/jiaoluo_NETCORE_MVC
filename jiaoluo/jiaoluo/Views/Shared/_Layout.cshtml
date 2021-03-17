@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] </title>
+    <environment include="Development">
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    </environment>
+    
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    @*required: false表示非必填*@
+    @RenderSection("scripts", required: false)
+
+    @*@if (IsSectionDefined("scripts"))
+    {
+        @RenderSection("scripts")
+    }*@
+</body>
+</html>
