@@ -15,10 +15,17 @@ namespace jiaoluo.BLL
         {
             _students = new List<Student>()
             {
-                new Student(){Id=1,Name="张三",ClassName="一",Email="111@123.com" },
-                new Student(){Id=2,Name="张四",ClassName="二",Email="221@123.com" },
-                new Student(){Id=3,Name="张五",ClassName="三",Email="233@123.com" },
+                new Student(){Id=1,Name="张三",ClassName=ClassNameEnum.FirstGrade,Email="111@123.com" },
+                new Student(){Id=2,Name="张四",ClassName=ClassNameEnum.SecondGrade,Email="221@123.com" },
+                new Student(){Id=3,Name="张五",ClassName=ClassNameEnum.GradeThree,Email="233@123.com" },
             };
+        }
+
+        public Student Add(Student student)
+        {
+            student.Id = _students.Max(s => s.Id) + 1;
+            _students.Add(student);
+            return student;
         }
 
         public Student GetStudent(int id)

@@ -11,5 +11,7 @@ namespace jiaoluo.IBLL
         Student GetStudent(int id);
 
         IEnumerable<Student> GetStudents();
+
+        Student Add(Student student);
     }
 }
