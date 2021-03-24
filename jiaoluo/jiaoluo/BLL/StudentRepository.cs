@@ -28,6 +28,22 @@ namespace jiaoluo.BLL
             return student;
         }
 
+        public Student Delete(int Id)
+        {
+            Student student = _students.FirstOrDefault(s => s.Id == Id);
+            if (student != null)
+            {
+                _students.Remove(student);
+
+            }
+            return student;
+        }
+
+        public string GetAllCount()
+        {
+            return _students.Count.ToString();
+        }
+
         public Student GetStudent(int id)
         {
             return _students.FirstOrDefault(a => a.Id == id);
@@ -36,6 +52,20 @@ namespace jiaoluo.BLL
         public IEnumerable<Student> GetStudents()
         {
             return _students;
+        }
+
+        public Student Update(Student student)
+        {
+            Student UpStudent = _students.FirstOrDefault(s => s.Id == student.Id);
+
+            if (UpStudent != null)
+            {
+                UpStudent.Name = student.Name;
+                UpStudent.Email = student.Email;
+                UpStudent.ClassName = student.ClassName;
+            }
+
+            return UpStudent;
         }
     }
 }

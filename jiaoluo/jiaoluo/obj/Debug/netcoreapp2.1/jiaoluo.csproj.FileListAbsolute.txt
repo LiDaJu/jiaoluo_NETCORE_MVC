@@ -44,5 +44,4 @@ D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\Razor\Views\Home\
 D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
 D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\bin\Debug\netcoreapp2.1\libman.json
-D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\jiaoluo.csprojAssemblyReference.cache
 D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs

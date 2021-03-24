@@ -23,8 +23,13 @@ using jiaoluo.ViewModel;
 
 #line default
 #line hidden
+#line 3 "D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\Views\_ViewImports.cshtml"
+using jiaoluo.IBLL;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0e3fc355a0657c950c34c78328347bac84b800d", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dc68a25f2f01872cf36fc9800ca5a8302021ff11", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cbb3a9ca425b6e5b97e8eef26bf56ab4eab9ea16", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

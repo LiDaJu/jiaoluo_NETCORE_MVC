@@ -1,9 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata.Ecma335;
+﻿using jiaoluo.Models;
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace jiaoluo.Models
+namespace jiaoluo.ViewModel
 {
-    public class Student
+    public class StudentCreateViewModel
     {
         public int Id { get; set; }
 
@@ -20,6 +25,7 @@ namespace jiaoluo.Models
         [RegularExpression(@"^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$", ErrorMessage = "邮箱格式不正确")]
         public string Email { get; set; }
 
-        public string PhotoPath { get; set; }
+        [Display(Name = "图片")]
+        public List<IFormFile> Photos { get; set; }
     }
 }
