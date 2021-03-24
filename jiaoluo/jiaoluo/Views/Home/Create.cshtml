@@ -1,4 +1,5 @@
 ﻿@model Student
+@inject IStudentRepository _studentRepository
 
 @{
     ViewData["Title"] = "创建学生信息";
@@ -34,6 +35,11 @@
     <div class="form-group row">
         <div class="col-sm-10">
             <button type="submit" class="btn-primary">创建</button>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            学生信息总人数：@_studentRepository.GetAllCount()
         </div>
     </div>
 </form>

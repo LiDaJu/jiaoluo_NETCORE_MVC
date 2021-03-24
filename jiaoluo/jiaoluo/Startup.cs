@@ -1,11 +1,14 @@
 ﻿using jiaoluo.BLL;
 using jiaoluo.IBLL;
+using jiaoluo.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,8 +29,13 @@ namespace jiaoluo
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().AddXmlSerializerFormatters();//支持返回xml和json格式文件
 
+            //AddDbContextPool比AddDbContext多一个数据库连接池，如果当前的连接池可以使用那就会直接使用不去创建；AddDbContextPool是core2.0以上的版本才有
+            services.AddDbContextPool<AppDBContext>(
+                optionsAction: options => options.UseSqlServer(_configuration.GetConnectionString("StudentDBConnection"))
+            );
+
+            services.AddMvc().AddXmlSerializerFormatters();//支持返回xml和json格式文件
             services.AddSingleton<IStudentRepository, StudentRepository>();
         }
 

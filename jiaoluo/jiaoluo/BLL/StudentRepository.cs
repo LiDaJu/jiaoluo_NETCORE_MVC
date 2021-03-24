@@ -28,6 +28,11 @@ namespace jiaoluo.BLL
             return student;
         }
 
+        public string GetAllCount()
+        {
+            return _students.Count.ToString();
+        }
+
         public Student GetStudent(int id)
         {
             return _students.FirstOrDefault(a => a.Id == id);
