@@ -16,7 +16,8 @@
       "commandName": "IISExpress",//环境名称
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"//环境
+        //"ASPNETCORE_ENVIRONMENT": "Development", //环境
+        "ASPNETCORE_ENVIRONMENT": "Staging" //环境
       }
     },
     "jiaoluo": {

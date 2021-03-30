@@ -36,6 +36,7 @@ namespace jiaoluo
             );
 
             services.AddMvc().AddXmlSerializerFormatters();//支持返回xml和json格式文件
+
             services.AddScoped<IStudentRepository, SQLSudentRepository>();
         }
 
@@ -50,7 +51,13 @@ namespace jiaoluo
 
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                //app.UseStatusCodePages();
+                //app.UseStatusCodePagesWithReExecute();
 
+            }
 
 
             //DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();

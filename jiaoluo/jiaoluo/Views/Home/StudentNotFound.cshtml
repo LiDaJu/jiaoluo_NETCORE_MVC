@@ -1,0 +1,12 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "404错误";
+}
+
+<div class="alert alert-danger mb-1 mt-1">
+    <h4>404 Not Found 错误</h4>
+    <hr />
+    <h4>查询不到相关学生信息：@(Model) </h4>
+</div>
+<a class="btn btn-outline-success" asp-controller="home" asp-action="Index" style="width:auto;">点击跳转到首页</a>
