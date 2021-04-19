@@ -53,10 +53,10 @@ namespace jiaoluo
             }
             else
             {
-                app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseExceptionHandler("/Error");//拦截异常信息
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");//拦截404页面信息
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
                 //app.UseStatusCodePages();
-                //app.UseStatusCodePagesWithReExecute();
-
             }
 
 

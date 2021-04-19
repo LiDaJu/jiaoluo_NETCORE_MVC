@@ -1,0 +1,62 @@
+2021-04-19 10:36:46.9863|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-19 10:36:47.5400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:54228/  0
+2021-04-19 10:36:47.5400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/  
+2021-04-19 10:36:47.5912|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.8215ms 200 
+2021-04-19 10:36:47.7766|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller jiaoluo.Controllers.HomeController (jiaoluo).
+2021-04-19 10:36:47.9465|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method jiaoluo.Controllers.HomeController.Index (jiaoluo) - Validation state: Valid
+2021-04-19 10:36:47.9568|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method jiaoluo.Controllers.HomeController.Index (jiaoluo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.5597ms.
+2021-04-19 10:36:47.9790|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2021-04-19 10:36:48.2396|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2021-04-19 10:36:49.3236|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ClassName], [s].[Email], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+2021-04-19 10:36:49.4263|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 1459.7263ms.
+2021-04-19 10:36:49.4263|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action jiaoluo.Controllers.HomeController.Index (jiaoluo) in 1649.4028ms
+2021-04-19 10:36:49.4397|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1902.003ms 200 text/html; charset=utf-8
+2021-04-19 10:36:49.4507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/css/site.css  
+2021-04-19 10:36:49.4507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/lib/twitter-bootstrap/js/bootstrap.js  
+2021-04-19 10:36:49.4507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/lib/jquery/jquery.js  
+2021-04-19 10:36:49.4507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/lib/twitter-bootstrap/css/bootstrap.css  
+2021-04-19 10:36:49.4811|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\css\site.css'
+2021-04-19 10:36:49.4811|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.7639ms 200 text/css
+2021-04-19 10:36:49.5081|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/twitter-bootstrap/css/bootstrap.css'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\lib\twitter-bootstrap\css\bootstrap.css'
+2021-04-19 10:36:49.5138|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.249ms 200 text/css
+2021-04-19 10:36:49.5138|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\lib\jquery\jquery.js'
+2021-04-19 10:36:49.5282|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.7893ms 200 application/javascript
+2021-04-19 10:36:49.5282|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/twitter-bootstrap/js/bootstrap.js'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\lib\twitter-bootstrap\js\bootstrap.js'
+2021-04-19 10:36:49.5282|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.7333ms 200 application/javascript
+2021-04-19 10:36:49.5420|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/images/2.png  
+2021-04-19 10:36:49.5420|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/2.png'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\images\2.png'
+2021-04-19 10:36:49.5572|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.432ms 200 image/png
+2021-04-19 10:36:49.5572|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/images/2dea8aea-762d-492f-924d-638e9a7abed6_ssss.png?v=czYnbXMPYLBfpIwfoCvvVLb2-DwAiHShQejDZUSjFXY  
+2021-04-19 10:36:49.5572|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/2dea8aea-762d-492f-924d-638e9a7abed6_ssss.png'. Physical path: 'D:\jiaoluo_NETCORE_MVC\jiaoluo\jiaoluo\wwwroot\images\2dea8aea-762d-492f-924d-638e9a7abed6_ssss.png'
+2021-04-19 10:36:49.5737|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9183ms 200 image/png
+2021-04-19 10:36:49.6251|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/favicon.ico  
+2021-04-19 10:36:49.6436|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller jiaoluo.Controllers.ErrorController (jiaoluo).
+2021-04-19 10:36:49.6766|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo) - Validation state: Valid
+2021-04-19 10:36:49.6825|WARN|jiaoluo.Controllers.ErrorController|发生404错误，路径：/favicon.ico
+2021-04-19 10:36:49.6825|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.9631ms.
+2021-04-19 10:36:49.6825|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2021-04-19 10:36:49.7009|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 12.722ms.
+2021-04-19 10:36:49.7009|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo) in 56.9011ms
+2021-04-19 10:36:49.7009|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.8891ms 404 text/html; charset=utf-8
+2021-04-19 10:36:52.8307|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/index/sssssss  
+2021-04-19 10:36:52.8307|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller jiaoluo.Controllers.ErrorController (jiaoluo).
+2021-04-19 10:36:52.8518|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo) - Validation state: Valid
+2021-04-19 10:36:52.8518|WARN|jiaoluo.Controllers.ErrorController|发生404错误，路径：/index/sssssss
+2021-04-19 10:36:52.8561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9401ms.
+2021-04-19 10:36:52.8561|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2021-04-19 10:36:52.8561|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 3.9014ms.
+2021-04-19 10:36:52.8561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action jiaoluo.Controllers.ErrorController.HttpStatusCodeHandler (jiaoluo) in 30.3121ms
+2021-04-19 10:36:52.8561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.5721ms 404 text/html; charset=utf-8
+2021-04-19 10:36:54.6893|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:54228/  
+2021-04-19 10:36:54.6893|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller jiaoluo.Controllers.HomeController (jiaoluo).
+2021-04-19 10:36:54.7093|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method jiaoluo.Controllers.HomeController.Index (jiaoluo) - Validation state: Valid
+2021-04-19 10:36:54.7093|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method jiaoluo.Controllers.HomeController.Index (jiaoluo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0552ms.
+2021-04-19 10:36:54.7093|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2021-04-19 10:36:54.7347|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ClassName], [s].[Email], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+2021-04-19 10:36:54.7347|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 24.1487ms.
+2021-04-19 10:36:54.7347|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action jiaoluo.Controllers.HomeController.Index (jiaoluo) in 45.4389ms
+2021-04-19 10:36:54.7347|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.3791ms 200 text/html; charset=utf-8
