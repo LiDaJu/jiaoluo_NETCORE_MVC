@@ -1,9 +1,12 @@
 ﻿using jiaoluo.BLL;
 using jiaoluo.IBLL;
 using jiaoluo.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,6 +41,8 @@ namespace jiaoluo
             services.AddMvc().AddXmlSerializerFormatters();//支持返回xml和json格式文件
 
             services.AddScoped<IStudentRepository, SQLSudentRepository>();
+
+            services.AddAuthentication(IISDefaults.AuthenticationScheme);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +65,12 @@ namespace jiaoluo
             }
 
 
+
+
+            
+
+
+
             //DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
 
             //defaultFilesOptions.DefaultFileNames.Clear();
@@ -76,6 +87,16 @@ namespace jiaoluo
             //fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("demo.html");fileServerOptions
 
             //app.UseFileServer();//结合了app.UseDefaultFiles();app.UseStaticFiles();app.UseDirectoryBrowser();
+
+
+
+            //添加身份验证
+            app.UseAuthentication();
+
+            app.UseSignalR(hubs =>
+            {
+                hubs.MapHub<ChatHub>("/chat");
+            });
 
             app.UseMvcWithDefaultRoute();//启用默认的mvc路由设置
 

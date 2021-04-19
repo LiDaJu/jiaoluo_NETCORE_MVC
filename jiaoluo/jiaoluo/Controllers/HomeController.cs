@@ -3,6 +3,7 @@ using jiaoluo.Models;
 using jiaoluo.ViewModel;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,11 +16,13 @@ namespace jiaoluo.Controllers
     {
         private readonly IStudentRepository _istudentRepository;
         private readonly HostingEnvironment _hostingEnvironment;
+        private readonly ILogger logger;
 
-        public HomeController(IStudentRepository istudentRepository, HostingEnvironment hostingEnvironment)
+        public HomeController(IStudentRepository istudentRepository, HostingEnvironment hostingEnvironment, ILogger<HomeController> logger)
         {
             _istudentRepository = istudentRepository;
             _hostingEnvironment = hostingEnvironment;
+            this.logger = logger;
         }
 
         public IActionResult Index()
@@ -33,10 +36,10 @@ namespace jiaoluo.Controllers
 
             Student student = _istudentRepository.GetStudent(id);
 
-            if (student==null)
+            if (student == null)
             {
                 Response.StatusCode = 404;
-                return View("StudentNotFound",id);
+                return View("StudentNotFound", id);
             }
 
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
